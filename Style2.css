@@ -1,0 +1,360 @@
+.header-catalog{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Photo/choice_underwear-08092021-0033.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header-about-us{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Photo/choice_underwear-08092021-0057.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header-contacts{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Photo/choice_underwear-08092021-0001.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header-measure{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Photo/choice_underwear-merk.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 250px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding:8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #aaa673;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 60px;
+}
+
+.text-box div{
+    margin: 10px 0 40px;
+    font-size: 20px;
+	font-family: Lora;
+    color: #fff;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+	font-family: Lora;
+    color: #fff;
+}
+/*end*/
+
+.end-catalog{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: absolute;
+    left: 41.5%;
+    text-align: center;
+}
+.end-contact{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: relative;
+}
+
+/*catalog*/
+
+.text-box img{
+    height: 50px;
+}
+
+.pointer{
+    margin: 10px 0 40px;
+    font-size: 18px;
+	font-family: Lora;
+    color: #fff;
+    position: absolute;
+    top: 90%;
+    left: 47.5%;
+    text-align: center;
+}
+
+.catalog{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.catalog-col{
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.catalog-col img{
+    width: 100%;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(204, 177, 101, 0.7);
+}
+.items {
+	display:flex;
+}
+* {
+	box-sizing: border-box;
+ }
+ .product {
+	width: 300px;
+	margin: 0 auto;
+	background: white;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 14px;
+	font-family: Lora;
+	text-transform: uppercase;
+ }
+ .product-item {
+	position: relative;
+	overflow: hidden;
+ }
+ .product img {
+	display: block;
+	width: 100%;
+ }
+ 
+ .product-buttons {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .8);
+	opacity: 0;
+	transition: .3s ease-in-out;
+ }
+ .button {
+	text-decoration: none;
+	color: #c0a97a;
+	font-size: 12px;
+	width: 140px;
+	height: 40px;
+	line-height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border: 2px solid #c0a97a;
+	transform: translate(-50%, -50%) scale(0);
+	transition: .3s ease-in-out;
+ }
+ .product-item:hover .product-buttons {
+	opacity: 1;
+ }
+ .product-item:hover .button {
+	transform: translate(-50%, -50%) scale(1);
+ }
+ .button:hover {
+	background: black;
+ }
+ .product-title {
+	color: #5e5e5e;
+ }
+ .product-title a {
+	text-decoration: none;
+	color: #2e2e2e;
+	font-weight: 600;
+	margin: 15px 0 5px;
+	padding-bottom: 7px;
+	display: block;
+	position: relative;
+	transition: .3s ease-in-out;
+ }
+ .product-title a:after {
+	content: "";
+	position: absolute;
+	width: 40px;
+	height: 2px;
+	background: #2e2e2e;
+	left: 50%;
+	margin-left: -20px;
+	bottom: 0;
+	transition: .3s ease-in-out;
+ }
+ .product-title a:hover {
+	color: #c0a97a;
+ }
+ .product-title:hover a:after {
+	background: #c0a97a;
+ }
+ .product-price {
+	font-size: 20px;
+	color: #c0a97a;
+	font-weight: 700;
+	text-transform:capitalize;
+ }
+ /*About us*/
+  .list-of-adv{
+    font-size: 20px;
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+
+ /*Contacts*/
+
+.cont-info{
+    margin-left: 2%;
+    margin-bottom: 2%;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cont-info1 {
+    flex: 1;
+    font-size: 19px;
+	font-family: Lora;
+    color: #fff;
+    order: 3;
+}
+
+.cont-info2 {
+    flex: 2;
+    text-align: center;
+    font-size: 18px;
+	font-family: Lora;
+    color: #fff;
+    order: 2;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+.social a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: #efefef;
+    position: relative;
+    margin: 5px;
+    text-align: center;
+    box-shadow: 0 2px 6px #c1c1c1;
+}
+.social a img {
+    width: 32px;
+    height: 32px;
+    margin-top: 14px;
+}
+
+iframe{
+    position: relative;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Measurements*/
+.container{
+    margin-left: 5%;
+    margin-top: 2%;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container p{
+    padding: 10px;
+}
+
+.text-box1 {
+    flex: 1;
+    font-size: 19px;
+	font-family: Lora;
+    color: #fff;
+    order: 3;
+}
+
+.text-box2 {
+    flex: 2;
+    text-align: center;
+    font-size: 18px;
+	font-family: Lora;
+    color: #fff;
+    order: 2;
+}
+
+.text-box3 {
+    flex: 1;
+    font-size: 19px;
+	font-family: Lora;
+    color: #fff;
+    order: 1;
+}
